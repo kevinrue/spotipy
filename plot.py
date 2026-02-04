@@ -96,16 +96,16 @@ def cluster(df, label, size=5, palette="tab20", exclude_labels=[]):
         palette=palette,
         s=size,
         ax=ax,
-        legend=True,
+        legend=False,
     )
 
     ax.set_aspect("equal")
-    ax.legend(
-        title="label",
-        bbox_to_anchor=(1.05, 1),
-        loc="upper left",
-        borderaxespad=0
-    )
+    # ax.legend(
+    #     title="label",
+    #     bbox_to_anchor=(1.05, 1),
+    #     loc="upper left",
+    #     borderaxespad=0
+    # )
     plt.gca().invert_yaxis()
     plt.show()
     
